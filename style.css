@@ -1,3 +1,12 @@
+:root{
+    --primary: #080033;
+    --secondary: #0896C8;
+    --terciary : #140857;
+    --yellow: #ff0;
+    --green: #0f0;
+    --red: #f00;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,8 +17,17 @@
 
 body {
     min-height: 100vh;
-    background: linear-gradient(#120650, #0896C8);
+    background-color: var(--primary);
     overflow-x: hidden;
+}
+
+h2 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
 }
 
 header {
@@ -54,11 +72,12 @@ header ul li a {
 header ul li a:hover,
 header ul li a.active {
     background: #fff;
-    color: #120650;
+    color: var(--primary);
 }
 
-.decor{
+.decor {
     position: relative;
+    background: linear-gradient(var(--primary), var(--secondary));
     width: 100%;
     height: 100vh;
     padding: 100px;
@@ -74,7 +93,7 @@ header ul li a.active {
     bottom: 0;
     width: 100%;
     height: 70px;
-    background:  linear-gradient(to top, #120650, transparent);
+    background:  linear-gradient(to top, var(--primary), transparent);
     z-index: 90;
 }
 
@@ -101,14 +120,14 @@ header ul li a.active {
 
 #text h1 {
     font-size: 7.5vw;
-    -webkit-text-stroke: 2px #120650;
+    -webkit-text-stroke: 2px var(--primary);
     text-align: center;
     line-height: 1em;
 }
 
 #text h2 {
     font-size: 5vw;
-    -webkit-text-stroke: 2px #120650;
+    -webkit-text-stroke: 2px var(--primary);
     text-align: center;
     line-height: 1em;
 }
@@ -119,26 +138,161 @@ header ul li a.active {
     padding: 8px 30px;
     border-radius: 40px;
     background: #fff;
-    color: #120650;
+    color: var(--primary);
     font-size: 1.5em;
     transform: translateY(25vh);
     z-index: 9;
     border: 1px solid #000;
 }
 
-.nomtemporaire {
+main{
+    background: var(--primary);
+    color: #fff;
+}
+
+section {
     position: relative;
-    padding: 100px;
-    background: #120650;
+    padding: 7em;
 }
 
-.nomtemporaire h2 {
-    font-size: 3.5em;
-    margin-bottom: 10px;
+.langages2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.progress {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
     color: #fff;
+    /* background: var(--terciary); */
+    background: var(--terciary) linear-gradient(to right, transparent 50%, var(--clr) 0);
 }
 
-.nomtemporaire p {
+.progress h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5em;
+    z-index: 1;
+    font-weight: 400;
+}
+
+.progress span{
+    font-size: 0.65em;
+    font-weight: 400;
+}
+
+.progress h4 {
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    font-weight: 500;
+    color: var(--clr);
+    text-transform: uppercase;
+}
+
+.progress::before {
+    content: '';
+    display: block;
+    height: 100%;
+    margin-left: 50%;
+    transform-origin: left;
+    border-radius: 0 100% 100% 0/50%;
+}
+
+.progress::after {
+    content: '';
+    position: absolute;
+    inset: 10px;
+    border-radius: 50%;
+    background: var(--primary);
+}
+
+.progress::before {
+    background: var(--clr);
+    transform: rotate(calc((var(--i) - 50) * 0.01turn));
+}
+
+
+
+
+
+
+.langages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.onelang {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.rating {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.block {
+    position: absolute;
+    width: 2px;
+    height: 15px;
+    background: #000;
+    left: 50%;
+    transform-origin: 50% 100px;
+    opacity: 0;
+    animation: animate 0.1s linear forwards;
+}
+
+@keyframes animate {
+    to
+    {
+        opacity: 1;
+    }
+}
+
+.block:nth-child(-n+81) {
+    background: var(--green);
+    box-shadow: 0 0 15px var(--red), 0 0 30px var(--green);
+}
+
+.rating h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
     font-size: 1.2em;
-    color: #fff;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.counter {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+sup {
+    font-size: 1.5em;
+    font-weight: 300;
 }
