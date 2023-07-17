@@ -8,66 +8,180 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="index.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- <script src="assets/js/home.js"></script> -->
+    <script src="assets/js/index.js" defer></script>
 </head>
 <body>
     <header>
         <a href="#" class="logo">Logo</a>
         <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="#Home" class="active">Home</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Education">Education</a></li>
             <li><a href="#">Work</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </header>
+    <section class="decor">
+        <img src="./assets/images/Lune.png" id="lune" alt="Lune">
+        <img src="./assets/images/Mer.png" id="mer" alt="Mer">
+        <div id="text">
+            <h1>JAYLE</h1>
+            <h2>Myriam-Espérance</h2>
+        </div>
+        <a href="#temp" id="btn">Explore</a>
+        <img src="./assets/images/Decor.png" id="foret" alt="Forêt">
+    </section>
     <main>
-        <section class="decor">
-            <img src="./images/Lune.png" id="lune" alt="Lune">
-            <img src="./images/Mer.png" id="mer" alt="Mer">
-            <div id="text">
-                <h1>JAYLE</h1>
-                <h2>Myriam-Espérance</h2>
+        <section class="home" id="Home">
+            <div class="columnCenter">
+                <h2>BIOGRAPHY</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at odio accumsan tellus tristique convallis sed id felis. Ut egestas erat mi. Suspendisse felis tortor, ornare a dignissim et, consequat a magna. Proin ac auctor ex. Proin sed velit urna. Vestibulum convallis ornare tempus. Fusce non nunc nunc. Donec felis est, pulvinar nec lorem ut, aliquam consectetur lacus. Morbi mollis mauris vel mollis tempor.
+                    <br>Nulla facilisi. Nulla facilisi. In bibendum pharetra ante eget interdum. Fusce vitae dapibus augue, vitae accumsan sapien. Sed egestas ornare congue. Ut vestibulum justo mi, consectetur rhoncus ante scelerisque et. Vestibulum euismod mi gravida ante tempus egestas.
+                </p>
             </div>
-            <a href="#temp" id="btn">Explore</a>
-            <img src="./images/Decor.png" id="foret" alt="Forêt">
-        </section>
-        <section class="nomtemporaire" id="temp">
-            <h2>Portfolio</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at odio accumsan tellus tristique convallis sed id felis. Ut egestas erat mi. Suspendisse felis tortor, ornare a dignissim et, consequat a magna. Proin ac auctor ex. Proin sed velit urna. Vestibulum convallis ornare tempus. Fusce non nunc nunc. Donec felis est, pulvinar nec lorem ut, aliquam consectetur lacus. Morbi mollis mauris vel mollis tempor.
-                <br>Nulla facilisi. Nulla facilisi. In bibendum pharetra ante eget interdum. Fusce vitae dapibus augue, vitae accumsan sapien. Sed egestas ornare congue. Ut vestibulum justo mi, consectetur rhoncus ante scelerisque et. Vestibulum euismod mi gravida ante tempus egestas.
-                <br>Phasellus in facilisis metus, in bibendum dolor. Integer volutpat tincidunt felis et tempor. Suspendisse volutpat dictum tincidunt. Phasellus iaculis nec augue id eleifend. Phasellus volutpat lacus odio, a semper felis molestie tincidunt. Aliquam consectetur convallis nisi at posuere. Duis efficitur id nibh eu lacinia. Nulla ultricies metus eu urna vestibulum pharetra. Nam et elit ac nisl fermentum cursus.                
-            </p>
-        </section>
-        <section class="langages2">
-            <article class="container">
-                <div class="progress" style="--i:85; --clr: #43f94a;">
-                    <h3>85<span>%</span></h3>
-                    <h4>HTML</h4>
-                </div>
-                <div class="progress" style="--i:80; --clr: #2ccde9;">
-                    <h3>80<span>%</span></h3>
-                    <h4>CSS</h4>
-                </div>
-                <div class="progress" style="--i:70; --clr: #fb297b;">
-                    <h3>70<span>%</span></h3>
-                    <h4>JAVASCRIPT</h4>
-                </div>
-                <div class="progress" style="--i:55; --clr: #ffe047;">
-                    <h3>55<span>%</span></h3>
-                    <h4>REACT</h4>
-                </div>            
-            </article>
+            <div class="me">
+                <img src="./assets/images/7ba5bedd-f819-4bf7-a399-b0f7cc2b8970.jpg" alt="mon portrait">
+            </div>
+            <div class="columnCenter">
+                <h2>Contact</h2>
+                <p>64.000 Pau, France</p>
+                <p>myriamjayle@gmail.com</p>
+                <p>+6-99-34-94-39</p>
+
+                <p class="linkedin">LinkedIn</p>
+            </div>
         </section>
 
-        <section class="langages">
-            <article class="onelang">
-                <div class="rating">
-                    <h2><span class="counter" data-target="80">80</span><sup>%</sup><br>HTML</h2>
-                    <div class="block"></div>
+        <section class="colCenter skills" id="Skills">
+            <h2>Skills</h2>
+            <div>
+                <article class="skillsGrid">
+                    <aside>
+                        <div class="bubbleGrey">
+                            <img src="" alt="">
+                        </div>
+                        <h3>HTML</h3>
+                        <p>Advanced</p>
+                    </aside>
+                    <aside>
+                        <div class="bubbleGrey">
+                            <img src="" alt="">
+                        </div>
+                        <h3>CSS</h3>
+                        <p>Intermediate</p>
+                    </aside>
+                    <aside>
+                        <div class="bubbleGrey">
+                            <img src="" alt="">
+                        </div>
+                        <h3>Javascript</h3>
+                        <p>Intermediate</p>
+                    </aside>
+                    <aside>
+                        <div class="bubbleGrey">
+                            <img src="" alt="">
+                        </div>
+                        <h3>React</h3>
+                        <p>Basic</p>
+                    </aside>
+                    <aside>
+                        <div class="bubbleGrey">
+                            <img src="" alt="">
+                        </div>
+                        <h3>Wordpress</h3>
+                        <p>Basic</p>
+                    </aside>
+                </article>
+                <article class="skillsGrid">
+                    <aside>
+                        <div class="bubbleGrey">
+                            <img src="" alt="">
+                        </div>
+                        <h3>Figma</h3>
+                        <p>Basic</p>
+                    </aside>
+                    <aside>
+                        <div class="bubbleGrey">
+                            <img src="" alt="">
+                        </div>
+                        <h3>Photoshp</h3>
+                        <p>Intermediate</p>
+                    </aside>
+                    <aside>
+                        <div class="bubbleGrey">
+                            <img src="" alt="">
+                        </div>
+                        <h3>InkScape</h3>
+                        <p>Intermediate</p>
+                    </aside>
+                    <aside>
+                        <div class="bubbleGrey">
+                            <img src="" alt="">
+                        </div>
+                        <h3>PHP</h3>
+                        <p>Basic</p>
+                    </aside>
+                    <aside>
+                        <div class="bubbleGrey">
+                            <img src="" alt="">
+                        </div>
+                        <h3>MySql</h3>
+                        <p>Basic</p>
+                    </aside>
+                    <aside>
+                        <div class="bubbleGrey">
+                            <img src="" alt="">
+                        </div>
+                        <h3>Github</h3>
+                        <p>Basic</p>
+                    </aside>
+                </article>
+            </div>
+        </section>
+
+        <section class="colCenter" id="Education">
+            <h2>Education</h2>
+            <article class="diplome">
+                <div class="year">2022</div>
+                <div class="dip">
+                    <h3>TRUCMACHIN</h3>
+                    <p>Fait à bidule</p>
                 </div>
             </article>
+            <article class="diplome">
+                <div class="year">2022</div>
+                <div class="dip">
+                    <h3>TRUCMACHIN</h3>
+                    <p>Fait à bidule</p>
+                </div>
+            </article>
+            <article class="diplome">
+                <div class="year">2022</div>
+                <div class="dip">
+                    <h3>TRUCMACHIN</h3>
+                    <p>Fait à bidule</p>
+                </div>
+            </article>
+            <article class="diplome">
+                <div class="year">2022</div>
+                <div class="dip">
+                    <h3>TRUCMACHIN</h3>
+                    <p>Fait à bidule</p>
+                </div>
+            </article>
+            <article class="diplome">
+                <div class="year">2022</div>
+                <div class="dip">
+                    <h3>TRUCMACHIN</h3>
+                    <p>Fait à bidule</p>
+                </div>
+            </article>
+
         </section>
+
     </main>
     
 </body>

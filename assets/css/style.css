@@ -1,0 +1,286 @@
+:root{
+    --primary: #080033;
+    --secondary: #0896C8;
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Roboto', sans-serif; */
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--primary);
+    overflow-x: hidden;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    color: var(--white);
+}
+
+/* ************************************************* HEADER ************************************************* */
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+header .logo {
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 20px;    
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    border-radius: 20px;
+    color: var(--white);
+}
+
+header ul li a:hover,
+header ul li a.active {
+    background: var(--white);
+    color: var(--primary);
+}
+
+.decor {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(var(--primary), var(--secondary));
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.decor::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background:  linear-gradient(to top, var(--primary), transparent);
+    z-index: 90;
+}
+
+.decor h2 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+}
+
+.decor p {
+    font-size: 1.2em;
+}
+
+.decor img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+#foret {
+    z-index: 10;
+}
+
+#text {
+    position: absolute;
+    white-space: nowrap;
+    z-index: 9;
+}
+
+#text h1 {
+    font-size: 7.5vw;
+    -webkit-text-stroke: 2px var(--primary);
+    text-align: center;
+    line-height: 1em;
+}
+
+#text h2 {
+    font-size: 5vw;
+    -webkit-text-stroke: 2px var(--primary);
+    text-align: center;
+    line-height: 1em;
+}
+
+#btn {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 30px;
+    border-radius: 40px;
+    background: var(--white);
+    color: var(--primary);
+    font-size: 1.5em;
+    transform: translateY(25vh);
+    z-index: 9;
+    border: 1px solid #000;
+}
+
+/* ************************************************* MAIN ************************************************* */
+main{
+    background: var(--primary);
+    font-family: 'Robot', sans-serif;
+}
+
+main h2 {
+    margin: 2em 0;
+}
+
+main h3 {
+    margin: 0.4em 0;
+}
+
+main p {
+    margin-bottom: 0.5em;
+}
+
+main section {
+    position: relative;
+    margin: 0 7em;
+    height: 100vh;
+    border-bottom: 0.2em solid var(--white);
+}
+
+.colCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ************************************************* HOME ************************************************* */
+
+.home {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.home div {
+    width: 25%;
+    margin: 0 2em;
+}
+
+.me img {
+    height: 70vh;
+    width: 100%;
+    object-fit: cover;
+    border: 0.3em solid var(--white);
+    border-radius: 9em;
+}
+
+.home h2 {
+    margin-bottom: 1em;
+}
+
+.home p {
+    margin-bottom: 0.5em;
+}
+
+.columnCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ************************************************* SKILLS ************************************************* */
+
+.skills div {
+    display: flex;
+    flex-direction: row;
+}
+
+.skillsGrid {
+    margin: 2em;
+    display: grid;
+    justify-content: space-between;
+	grid-template-columns: 30% 30% 30%;
+    gap: 2em;
+}
+
+.skills aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bubbleGrey {
+    background: gray;
+    width: 4.5em;
+    height: 7em;
+    border-radius: 9em;
+}
+
+/* ************************************************* EDUCATION ************************************************* */
+
+.diplome {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+.year {
+    position: absolute;
+    left: -1em;
+    font-size: 2em;
+    font-weight: bold;
+    background-color: var(--white);
+    border: 0.1em solid var(--white);
+    color: var(--primary);
+    border-radius: 50%;
+    height: 2.7em;
+    width: 2.7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dip {
+    padding: 0 5em;
+    border: 0.2em solid var(--white);
+    border-radius: 9em;
+    width: 30vw;
+}
+
+.dip h3 {
+    margin-bottom: 0.2em;
+}
+
+#Education article {
+    margin-bottom: 2em;
+}
