@@ -15,29 +15,32 @@
 </head>
 <body>
     <header>
-        <a href="#" class="logo">Logo</a>
-        <ul>
-            <li><a href="#Home" class="active">Home</a></li>
-            <li><a href="#Skills">Skills</a></li>
-            <li><a href="#Education">Education</a></li>
-            <li><a href="#">Work</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+        <section class="decor" id="decor">
+            <img src="./assets/images/Lune.png" id="lune" alt="Lune">
+            <img src="./assets/images/Mer.png" id="mer" alt="Mer">
+            <div id="text">
+                <h1>JAYLE</h1>
+                <h2>Myriam-Espérance</h2>
+            </div>
+            <a href="#temp" id="btn">Portfolio here or scroll</a>
+            <img src="./assets/images/Decor.png" id="foret" alt="Forêt">
+        </section>
     </header>
-    <section class="decor">
-        <img src="./assets/images/Lune.png" id="lune" alt="Lune">
-        <img src="./assets/images/Mer.png" id="mer" alt="Mer">
-        <div id="text">
-            <h1>JAYLE</h1>
-            <h2>Myriam-Espérance</h2>
-        </div>
-        <a href="#temp" id="btn">Explore</a>
-        <img src="./assets/images/Decor.png" id="foret" alt="Forêt">
-    </section>
     <main>
+        <nav>
+            <ul>            
+                <!-- <li><a href="#decor" class="logo">Logo</a></li> -->
+                <li><a href="#Home" class="active">Home</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#Education">Education</a></li>
+                <li><a href="#Experience">Expérience</a></li>
+                <li><a href="#Work">Works</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
         <section class="home" id="Home">
             <div class="columnCenter">
-                <h2>BIOGRAPHY</h2>
+                <h2>Biography</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at odio accumsan tellus tristique convallis sed id felis. Ut egestas erat mi. Suspendisse felis tortor, ornare a dignissim et, consequat a magna. Proin ac auctor ex. Proin sed velit urna. Vestibulum convallis ornare tempus. Fusce non nunc nunc. Donec felis est, pulvinar nec lorem ut, aliquam consectetur lacus. Morbi mollis mauris vel mollis tempor.
                     <br>Nulla facilisi. Nulla facilisi. In bibendum pharetra ante eget interdum. Fusce vitae dapibus augue, vitae accumsan sapien. Sed egestas ornare congue. Ut vestibulum justo mi, consectetur rhoncus ante scelerisque et. Vestibulum euismod mi gravida ante tempus egestas.
                 </p>
@@ -47,10 +50,11 @@
             </div>
             <div class="columnCenter">
                 <h2>Contact</h2>
+                <br>
                 <p>64.000 Pau, France</p>
+                <br>
                 <p>myriamjayle@gmail.com</p>
-                <p>+6-99-34-94-39</p>
-
+                <br>
                 <p class="linkedin">LinkedIn</p>
             </div>
         </section>
@@ -61,28 +65,28 @@
                 <article class="skillsGrid">
                     <aside>
                         <div class="bubbleGrey">
-                            <img src="" alt="">
+                            <img src="./assets/images/html.png" alt="Logo HTML">
                         </div>
                         <h3>HTML</h3>
                         <p>Advanced</p>
                     </aside>
                     <aside>
                         <div class="bubbleGrey">
-                            <img src="" alt="">
+                            <img src="./assets/images/css.png" alt="Logo CSS">
                         </div>
                         <h3>CSS</h3>
                         <p>Intermediate</p>
                     </aside>
                     <aside>
                         <div class="bubbleGrey">
-                            <img src="" alt="">
+                            <img src="./assets/images/javascript.png" alt="Logo Javascript" class="logoGros">
                         </div>
                         <h3>Javascript</h3>
                         <p>Intermediate</p>
                     </aside>
                     <aside>
                         <div class="bubbleGrey">
-                            <img src="" alt="">
+                            <img src="./assets/images/react.png" alt="Logo React">
                         </div>
                         <h3>React</h3>
                         <p>Basic</p>
@@ -112,7 +116,7 @@
                     </aside>
                     <aside>
                         <div class="bubbleGrey">
-                            <img src="" alt="">
+                            <img src="./assets/images/inkscape.png" alt="Logo InkScape">
                         </div>
                         <h3>InkScape</h3>
                         <p>Intermediate</p>
@@ -126,7 +130,7 @@
                     </aside>
                     <aside>
                         <div class="bubbleGrey">
-                            <img src="" alt="">
+                            <img src="./assets/images/mysql.png" alt="Logo MySQL">
                         </div>
                         <h3>MySql</h3>
                         <p>Basic</p>
@@ -145,43 +149,56 @@
         <section class="colCenter" id="Education">
             <h2>Education</h2>
             <article class="diplome">
-                <div class="year">2022</div>
+                <div class="year">2023</div>
                 <div class="dip">
-                    <h3>TRUCMACHIN</h3>
-                    <p>Fait à bidule</p>
+                    <h3>Intégrateur Web</h3>
+                    <p>OpenClassRooms (distanciel - en cours)</p>
                 </div>
             </article>
             <article class="diplome">
                 <div class="year">2022</div>
                 <div class="dip">
-                    <h3>TRUCMACHIN</h3>
-                    <p>Fait à bidule</p>
+                    <h3>Bootcamp 3 mois</h3>
+                    <p>La Fabrique du Numérique   (Pau)</p>
                 </div>
             </article>
             <article class="diplome">
-                <div class="year">2022</div>
+                <div class="year">2020</div>
                 <div class="dip">
-                    <h3>TRUCMACHIN</h3>
-                    <p>Fait à bidule</p>
+                    <h3>Formation Wordpress: Créer son site de A à Z</h3>
+                    <p>Kiluz   (distanciel)</p>
                 </div>
             </article>
             <article class="diplome">
-                <div class="year">2022</div>
+                <div class="year">2004</div>
                 <div class="dip">
-                    <h3>TRUCMACHIN</h3>
-                    <p>Fait à bidule</p>
+                    <h3>Licence de Mathématiques</h3>
+                    <p>Université de Pau et des Pays de l'Adour</p>
                 </div>
             </article>
             <article class="diplome">
-                <div class="year">2022</div>
+                <div class="year">2001</div>
                 <div class="dip">
-                    <h3>TRUCMACHIN</h3>
-                    <p>Fait à bidule</p>
+                    <div>
+                        <h3>DEUG MIAS</h3>
+                        <p>(Mathématiques et Informatique Appliquées aux Sciences)</p>
+                    </div>
+                    <p>Université de Pau et des Pays de l'Adour</p>
                 </div>
             </article>
-
         </section>
 
+        <section class="colCenter" id="Experience">
+            <h2>Expérience</h2>
+        </section>
+
+        <section class="colCenter" id="Work">
+            <h2>Works</h2>
+        </section>
+
+        <section class="colCenter" id="Contact">
+            <h2>Contact</h2>
+        </section>
     </main>
     
 </body>

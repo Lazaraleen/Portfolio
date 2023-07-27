@@ -21,22 +21,30 @@ body {
     color: var(--white);
 }
 
-/* ************************************************* HEADER ************************************************* */
-
-header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    font-family: 'Poppins', sans-serif;
-    width: 100%;
-    padding: 30px 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
+h2 {
+    font-size: 1.9em;
 }
 
-header .logo {
+h3 {
+    font-size: 1.2em;
+}
+
+/* ************************************************* NAVIGATION ************************************************* */
+
+nav {
+    position: fixed;
+    left: 0;
+    font-family: 'Poppins', sans-serif;
+    width: 100vh;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    transform-origin: top left;
+    transform: rotate(270deg);
+}
+
+nav .logo {
     font-weight: 700;
     text-decoration: none;
     color: var(--white);
@@ -45,29 +53,31 @@ header .logo {
     letter-spacing: 2px;
 }
 
-header ul {
+nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-header ul li {
+nav ul li {
     list-style: none;
-    margin-left: 20px;    
+    margin-left: 5px;
 }
 
-header ul li a {
+nav ul li a {
     text-decoration: none;
     padding: 6px 15px;
     border-radius: 20px;
     color: var(--white);
 }
 
-header ul li a:hover,
-header ul li a.active {
+nav ul li a:hover,
+nav ul li a.active {
     background: var(--white);
     color: var(--primary);
 }
+
+/* ************************************************* HEADER ************************************************* */
 
 .decor {
     position: relative;
@@ -80,6 +90,7 @@ header ul li a.active {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    z-index: 10;
 }
 
 .decor::before {
@@ -155,7 +166,7 @@ main{
 }
 
 main h2 {
-    margin: 2em 0;
+    margin: 1em 0;
 }
 
 main h3 {
@@ -222,6 +233,8 @@ main section {
 .skills div {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .skillsGrid {
@@ -241,8 +254,18 @@ main section {
 .bubbleGrey {
     background: gray;
     width: 4.5em;
-    height: 7em;
+    height: 6em;
     border-radius: 9em;
+}
+
+.bubbleGrey img {
+    width: 90%;
+    height: 68%;
+}
+
+.bubbleGrey .logoGros {
+    width: 80%;
+    height: 60%;
 }
 
 /* ************************************************* EDUCATION ************************************************* */
@@ -257,14 +280,14 @@ main section {
 .year {
     position: absolute;
     left: -1em;
-    font-size: 2em;
+    font-size: 1.9em;
     font-weight: bold;
     background-color: var(--white);
     border: 0.1em solid var(--white);
     color: var(--primary);
     border-radius: 50%;
-    height: 2.7em;
-    width: 2.7em;
+    height: 2.5em;
+    width: 2.5em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -274,11 +297,22 @@ main section {
     padding: 0 5em;
     border: 0.2em solid var(--white);
     border-radius: 9em;
-    width: 30vw;
+    width: 45vw;
 }
 
 .dip h3 {
     margin-bottom: 0.2em;
+}
+
+.dip p {
+    font-size: 0.8em;
+}
+
+.dip div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
 }
 
 #Education article {
