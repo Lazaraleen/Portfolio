@@ -17,3 +17,4 @@ window.addEventListener('scroll', function(){
     header.style.top = value * 0.85 + 'px';
 })
 
+// **************************** Code pour le défilement de la NavBar ***************************** 
